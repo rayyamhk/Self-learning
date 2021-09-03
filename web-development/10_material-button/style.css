@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ripple {
+    animation: ripple 0.5s linear;
+}
+
+@keyframes ripple {
+    to {
+       transform: scale(2);
+       opacity: 0; 
+    }
+} 

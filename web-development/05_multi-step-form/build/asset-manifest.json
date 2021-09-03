@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Self-learning/web-development/05_multi-step-form/build/static/css/main.58c4427e.chunk.css",
+    "main.js": "/Self-learning/web-development/05_multi-step-form/build/static/js/main.f1ce39c4.chunk.js",
+    "main.js.map": "/Self-learning/web-development/05_multi-step-form/build/static/js/main.f1ce39c4.chunk.js.map",
+    "runtime-main.js": "/Self-learning/web-development/05_multi-step-form/build/static/js/runtime-main.5f1411cd.js",
+    "runtime-main.js.map": "/Self-learning/web-development/05_multi-step-form/build/static/js/runtime-main.5f1411cd.js.map",
+    "static/js/2.fca28b20.chunk.js": "/Self-learning/web-development/05_multi-step-form/build/static/js/2.fca28b20.chunk.js",
+    "static/js/2.fca28b20.chunk.js.map": "/Self-learning/web-development/05_multi-step-form/build/static/js/2.fca28b20.chunk.js.map",
+    "index.html": "/Self-learning/web-development/05_multi-step-form/build/index.html",
+    "precache-manifest.f63f8c21478a7704a39a3ca1f416c90b.js": "/Self-learning/web-development/05_multi-step-form/build/precache-manifest.f63f8c21478a7704a39a3ca1f416c90b.js",
+    "service-worker.js": "/Self-learning/web-development/05_multi-step-form/build/service-worker.js",
+    "static/css/main.58c4427e.chunk.css.map": "/Self-learning/web-development/05_multi-step-form/build/static/css/main.58c4427e.chunk.css.map",
+    "static/js/2.fca28b20.chunk.js.LICENSE": "/Self-learning/web-development/05_multi-step-form/build/static/js/2.fca28b20.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f1411cd.js",
+    "static/js/2.fca28b20.chunk.js",
+    "static/css/main.58c4427e.chunk.css",
+    "static/js/main.f1ce39c4.chunk.js"
+  ]
+}

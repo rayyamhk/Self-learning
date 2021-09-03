@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #34495e;
+    padding: 1rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+img {
+    display: block;
+    height: 300px;
+    width: 300px;
+    margin: 1rem;
+}

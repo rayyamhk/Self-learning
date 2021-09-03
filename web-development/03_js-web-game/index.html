@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Web Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="wrap">
+            <div class="timer"><span class="min">00</span>:<span class="sec">00</span></div>;
+            <div id="center">   
+                <div class="rows-wrapper">
+                    <div class="row" id="r-one">
+                        <span class="sq" id="sq-1"></span>
+                        <span class="sq" id="sq-2"></span>
+                        <span class="sq" id="sq-3"></span>
+                    </div>
+                    <div class="row" id="r-two">
+                        <span class="sq" id="sq-4"></span>
+                        <span class="sq" id="sq-5"></span>
+                        <span class="sq" id="sq-6"></span>
+                    </div>
+                    <div class="row" id="r-three">
+                        <span class="sq" id="sq-7"></span>
+                        <span class="sq" id="sq-8"></span>
+                        <span class="sq" id="sq-9"></span>
+                    </div>
+                    <div class="row" id="r-four">
+                        <span class="sq" id="sq-10"></span>
+                        <span class="sq" id="sq-11"></span>
+                        <span class="sq" id="sq-12"></span>
+                    </div>
+                    <div class="row" id="main"></div>
+                </div>
+            </div>
+        </div>
+
+        <canvas id="canvas" height="400px" width="650px"></canvas>
+        <div class="gameover-panel">
+            <span>GAME OVER</span>
+            <button>RESTART</button>
+        </div>
+        <div class="level">Stage:<span>1</span></div>
+    </div>
+
+    <!-- Sources -->
+    <audio loop id="bg">
+        <source src="./media/bg.mp3">
+    </audio>
+    <audio id="level">
+        <source src="./media/up.mp3">
+    </audio>
+    <audio id="death">
+        <source src="./media/death.mp3">
+    </audio>
+    <img src="./img/enemy.png" alt="ghost" id="ghost" style="display: none;">
+    <img src="./img/ball.png" alt="you" id="you" style="display: none;">
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
