@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://rayyamhk.github.io/Self-learning/web-development/04_multi-step-form/build/precache-manifest.4872865718e784a61182528ac53f1228.js"
+  "/Self-learning/web-development/04_multi-step-form/build/precache-manifest.e67888087a7b5f21655421952722f893.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("https://rayyamhk.github.io/Self-learning/web-development/04_multi-step-form/build/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/Self-learning/web-development/04_multi-step-form/build/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/precache-manifest.036f141983eff0454bf7dd2f70b1d293.js"
+  "/Self-learning/web-development/06_flat-ui-colors-clone/build/precache-manifest.b4248a50c2b191fa051486bb8900a120.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/Self-learning/web-development/06_flat-ui-colors-clone/build/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
