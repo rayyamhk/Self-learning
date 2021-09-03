@@ -1,2 +1,2 @@
 # React: flatuicolors.com clone
-[https://rayyamhk.github.io/Self-learning/web-development/flat-ui-colors-clone/build](https://rayyamhk.github.io/Self-learning/web-development/flat-ui-colors-clone/build)
+[https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build](https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build)
