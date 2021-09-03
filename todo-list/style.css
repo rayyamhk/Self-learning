@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container > header {
+  width: 100%;
+  padding: 25px;
+  background-color: #c0392b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container > header > h1 {
+  color: white;
+}
+
+.container > header > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.container > header > div > input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.container > header > div > .add-btn {
+  border: none;
+  background-color: #f39c12;
+  color: white;
+  padding: 0px 25px;
+  cursor: pointer;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.container > header > div > .add-btn:hover {
+  background-color: #e67e22;
+}
+
+.container > main {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: url("./img/bg.jpg") no-repeat;
+  background-size: cover;
+  overflow: auto;
+}
+
+.container > main > ul {
+  width: 100%;
+}
+
+.container > main > ul > li {
+  display: block;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.container > main > ul > li > .tick-icon {
+  width: 40px;
+  min-height: 40px;
+  opacity: 0;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.container > main > ul > li > .tick-icon > div {
+  height: 20px;
+  width: 10px;
+  border: 5px solid white;
+  border-top: none;
+  border-left: none;
+  -webkit-transform: translate(15px, 11px) rotate(45deg);
+          transform: translate(15px, 11px) rotate(45deg);
+}
+
+.container > main > ul > li > span {
+  min-height: 40px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #2c3e50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+
+.container > main > ul > li > .cancel-btn {
+  min-height: 40px;
+  width: 40px;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.container > main > ul > li > .cancel-btn:hover {
+  background-color: #e67e22;
+  color: white;
+}
+
+.container > main > ul > .list-done > .tick-icon {
+  opacity: 0.5;
+  background-color: #7f8c8d;
+}
+
+.container > main > ul > .list-done > span {
+  text-decoration: line-through;
+  color: white;
+  background-color: #7f8c8d;
+  opacity: 0.5;
+}
+
+.container > main > ul > .list-done > .cancel-btn {
+  background-color: #7f8c8d;
+  opacity: 0.5;
+}
+
+.container > main > ul > .list-done > .cancel-btn > i {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
