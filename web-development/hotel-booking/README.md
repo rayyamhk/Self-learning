@@ -1,1 +1,0 @@
-# React: Hotel booking frontend
