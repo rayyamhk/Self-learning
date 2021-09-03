@@ -1,3 +1,3 @@
-# Javascript: TODO-list (Jan 17, 2020)
+# Javascript: TODO-list
 - Editable
 - Local storage

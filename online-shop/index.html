@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Comfy House eShop</title>
+        <script src="https://kit.fontawesome.com/592b16f39c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <section class="overlay">
+
+        </section>
+        <header>
+            <img src="img/menu.svg" id="menu">
+            <a href="/online_shop">
+                <img src="img/logo.svg" id="logo">
+            </a>
+            <div class="shopping-cart">
+                <img src="img/shopping-cart.svg">
+                <div id="num-of-products">
+                    0
+                </div>
+            </div>
+        </header>
+        <section class="shopping-cart-list">
+            <img src="img/close-btn.svg" id="close-btn">
+            <h1>Your Cart</h1>
+            <div id="goods">
+               <!-- <div class="good">
+                   <img src="img/product-1.jpeg">
+                   <div class="good-info">
+                        <span>Queen Panel Bed</span>
+                        <span>$10.99</span>
+                        <button type="button" class="remove-btn">Remove</button>
+                   </div>
+                   <div class="good-control">
+                        <i class="fas fa-sort-up arrow-up"></i>
+                        <span>1</span>
+                        <i class="fas fa-sort-down arrow-down"></i>                   </div>
+               </div> -->
+            </div>
+            <div id="total-price">
+                Your Total : $<span id="current-price">0.00</span>
+            </div>
+            <div class="btn" id="clear-btn">
+                CLEAR CART
+            </div>
+        </section>
+        <section class="welcome">
+            <div class="container">
+                <h1>FURNITURE COLLECTION</h1>
+                <a href="#showcase">SHOP NOW</a>  
+            </div>
+        </section>
+
+        <section class="showcase" id="showcase">
+            <div class="container">
+                <h1>Our Products</h1>
+                <div class="boxes">
+                    <!-- Handled by js functions -->
+                </div>
+            </div>
+        </section>
+        <script src="./app.js"></script>
+    </body>
+</html>
