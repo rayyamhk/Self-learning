@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/static/css/main.8e209d50.chunk.css",
+    "main.js": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/static/js/main.7367fdbe.chunk.js",
+    "main.js.map": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/static/js/main.7367fdbe.chunk.js.map",
+    "runtime-main.js": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/static/js/runtime-main.e5972143.js",
+    "runtime-main.js.map": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/static/js/runtime-main.e5972143.js.map",
+    "static/js/2.19aed2db.chunk.js": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/static/js/2.19aed2db.chunk.js",
+    "static/js/2.19aed2db.chunk.js.map": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/static/js/2.19aed2db.chunk.js.map",
+    "index.html": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/index.html",
+    "precache-manifest.036f141983eff0454bf7dd2f70b1d293.js": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/precache-manifest.036f141983eff0454bf7dd2f70b1d293.js",
+    "service-worker.js": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/service-worker.js",
+    "static/css/main.8e209d50.chunk.css.map": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/static/css/main.8e209d50.chunk.css.map",
+    "static/js/2.19aed2db.chunk.js.LICENSE": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/static/js/2.19aed2db.chunk.js.LICENSE",
+    "static/media/App.css": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/static/media/bg.90434ee3.jpg",
+    "static/media/click.mp3": "https://rayyamhk.github.io/Self-learning/web-development/06_flat-ui-colors-clone/build/static/media/click.e3789c2b.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e5972143.js",
+    "static/js/2.19aed2db.chunk.js",
+    "static/css/main.8e209d50.chunk.css",
+    "static/js/main.7367fdbe.chunk.js"
+  ]
+}
