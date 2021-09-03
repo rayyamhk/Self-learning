@@ -1,0 +1,2 @@
+# Web Scraping: [The Stand News](https://www.thestandnews.com/)
+The Stand News is a non-profit journalism based in Hong Kong. This repository allows you to web scrape the content of The Stand News and export each news as a minified and styled html file.
