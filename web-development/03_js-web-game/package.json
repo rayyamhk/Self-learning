@@ -1,0 +1,17 @@
+{
+  "name": "webgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "homepage": "https://rayyamhk.github.io/vanilla-js-web-game",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
