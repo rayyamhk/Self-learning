@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #e4dfd9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header #menu {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+header a #logo {
+    height: 35px;
+}
+
+header .shopping-cart {
+    height: 35px;
+    width: 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+header .shopping-cart img {
+    height: 100%;
+    width: 100%;
+}
+
+header .shopping-cart  #num-of-products {
+    height: 18px;
+    width: 18px;
+    background-color: #ea8b4b;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+/* End of Header */
+/* Shopping cart list */
+.shopping-cart-list {
+    height: 100%;
+    width: 0;
+    max-width: 500px;
+    background-color: #faf2ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    transition: 0.2s all ease-in-out;
+    z-index: 2;
+}
+
+.shopping-cart-list #close-btn {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.shopping-cart-list h1 {
+    font-size: 2.5rem;
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+
+.shopping-cart-list #goods {
+    width: 80%;
+}
+
+.shopping-cart-list #total-price {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.shopping-cart-list #clear-btn {
+    width: 130px;
+    height: 40px;
+    margin-top: 1rem;
+    background-color: #ea8b4b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+}
+
+#clear-btn:hover {
+    background-color: #d35400;
+}
+
+#goods .good {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+#goods .good img {
+    height: 100%;
+}
+
+#goods .good .good-info {
+    height: 100%;
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.good-info span {
+    font-weight: bold;
+    display: block;
+}
+
+.good-info button {
+    display: block;
+    width: 50px;
+    color: #7f8c8d;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.good-info button:hover {
+    transform: scale(1.1);
+}
+
+#goods .good .good-control {
+    height: 100%;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.good-control i {
+    cursor: pointer;
+}
+
+/* End of Shopping cart list */
+/* Welcome section */
+
+.welcome {
+    height: 100vh;
+    width: 100%;
+    background: url("./img/hero-bcg.jpeg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome .container {
+    width: 90%;
+    max-width: 750px;
+    background-color: rgba(256,256,256, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.welcome .container h1 {
+    font-size: 1.7rem;
+}
+
+@media screen and (min-width: 720px) {
+    .welcome .container h1 {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (min-width: 960px) {
+    .welcome .container h1 {
+        font-size: 3rem;
+    }
+}
+.welcome .container a {
+    text-decoration: none;
+    color: white;
+    height: 40px;
+    width: 130px;
+    margin-top: 1.5rem;
+    background-color: #ea8b4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.welcome .container a:hover {
+    background-color: #d35400;
+}
+/* End of welcome section */
+
+/* Showcase */
+.showcase {
+    width: 100%;
+}
+
+.showcase .container {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showcase .container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.showcase .container .boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boxes .box {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width: 720px) {
+    .boxes .box {
+        width: 45%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .boxes {
+        padding: 0rem 4rem;
+    }
+    .boxes .box {
+        width: 30%;
+    }
+}
+
+.boxes .box .product-image {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image:hover::before {
+    opacity: 1;
+}
+.product-image:hover > .tag {
+    transform: translateX(0);
+}
+
+.product-image::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(256,256,256, 0.7);
+    opacity: 0;
+    transition: 0.2s all ease-in-out;
+}
+
+.product-image img {
+    width: 100%;
+}
+
+.product-image .tag {
+    height: 40px;
+    width: 140px;
+    padding: 5px;
+    transform: translateX(140px);
+    background-color: #ea8b4b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 2rem;
+    right: 0;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    overflow: hidden;
+}
+
+.product-image .tag:hover {
+    background-color: #d35400;
+}
+
+.product-image i {
+    margin-right: 5px;
+}
+
+.boxes .box .product-name {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+.boxes .box .product-price {
+    color: #d35400;
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 5px;
+    text-transform: capitalize;
+}

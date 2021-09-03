@@ -1,1 +1,1 @@
-# React: Hotel booking frontend (Jan 13, 2020)
+# React: Hotel booking frontend
