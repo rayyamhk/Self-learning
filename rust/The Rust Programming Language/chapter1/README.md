@@ -1,0 +1,13 @@
+# Chapter 1
+- The **main** function is always the first line of code that runs in every rust executable.
+- println! is called **Rust macro**, which is diff from println (normal function). Functions with ! are macros rather than normal functions.
+- Rust is a complied language, complier translates .rs to executables using `rustc` command. Unlike interpreted lang such as JavaScript and Python, interpreters are required.
+- **Cargo** is the package manager and build system for Rust.
+  - `cargo new PROJECT_NAME`: creates a project directory.
+    - **Cargo.toml**: metadata and dependencies of your project.
+    - .toml stands for Tom's Obvious, Minimal Language.
+  - `cargo build`: creates an executable in `/target/debug`.
+    - **Cargo.lock**: keeps track of the exact versions of dependencies. Never modified.
+  - `cargo build --release`: builds your executable in `target/release` for production with optimization.
+  - `cargo run`: creates an executable if the code is changed and executes it immediately.
+  - `cargo check`: quickly checks your code for errors but do not produce an executable. It is much faster than `cargo build`.
