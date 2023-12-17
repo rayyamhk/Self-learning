@@ -1,0 +1,210 @@
+{
+  "compilerOptions": {
+    /*
+     * https://www.typescriptlang.org/tsconfig#skipLibCheck
+     *
+     * Skip the type checking for declaration files to improve performance.
+     */
+    "skipLibCheck": true,
+
+    /*
+     * https://www.typescriptlang.org/tsconfig#noEmit
+     *
+     * Do not emit compiled output files.
+     * Enable it when you only want to do type checking, or bundler will handle the compilation.
+     */
+    "noEmit": false,
+
+    // ==== Module ====
+    /*
+     * https://www.typescriptlang.org/tsconfig#module
+     *
+     * Specify the module system for the output files. Either ES module, CommonJS module, UMD, AMD.
+     * Remark:
+     *   For Node16/NodeNext, since modern node environment supports both es import and commonjs require,
+     *   The emitted output files use either ES module or CommonJS module depends on the "type" value of package.json.
+     */
+    "module": "ESNext",
+
+    /*
+     * https://www.typescriptlang.org/tsconfig#moduleResolution
+     *
+     * Specify the module resolution algorithm (import v.s. require)
+     */
+    "moduleResolution": "Node",
+
+    /*
+     * https://www.typescriptlang.org/tsconfig#resolveJsonModule
+     *
+     * Allows importing modules with ".json" extension.
+     */
+    "resolveJsonModule": true,
+    // ================
+
+    // ==== Emit ====
+    "outDir": "dist",
+    "removeComments": true,
+
+    /*
+     * https://www.typescriptlang.org/tsconfig#sourceMap
+     *
+     * Generates a source map for .ts files which allows debuggers to display the ts source files when working with compiled js files.
+     */
+    "sourceMap": true,
+
+    /*
+     * https://www.typescriptlang.org/tsconfig#declaration
+     *
+     * Generates .d.ts files for every output files.
+     */
+    "declaration": true,
+
+    /*
+     * https://www.typescriptlang.org/tsconfig#declarationMap
+     *
+     * Generates a source map for .d.ts files which map the type back to the original .ts source file.
+     */
+    "declarationMap": true,
+    // ==============
+
+    // ==== JS Support ====
+    /*
+     * https://www.typescriptlang.org/tsconfig#allowJs
+     *
+     * Importing .js files are not allowed.
+     */
+    "allowJs": false,
+
+    /*
+     * https://www.typescriptlang.org/tsconfig#checkJs
+     *
+     * Only work when "allowJs" is true. It will do type checking for .js files.
+     */
+    "checkJs": false,
+    // ====================
+
+    // ==== Interop Constraints ====
+    /*
+     * https://www.typescriptlang.org/tsconfig#esModuleInterop
+     *
+     * By default, TypeScript considers these two import statements are equivalent:
+     * import * as React from 'react' <=> const React = require('react');
+     * import React from 'react' <=> const React = require('react').default;
+     *
+     * However, this mis-match causes two issues:
+     * 1. ES module namespace import (import * as something) can only be an *object*, but CommonJS allows require function.
+     *
+     * Enable "esModuleInterop" provides helper functions to fix the mis-match:
+     * import * as React from 'react' => const react = importStar(require('react'));
+     * import React from 'react' => const react = importDefault(require('react'));
+     */
+    "esModuleInterop": true,
+
+    /*
+     * https://www.typescriptlang.org/tsconfig#allowSyntheticDefaultImports
+     *
+     * Allows you to use default import as namespace import, i.e.
+     * import React from 'react'; is equivalent to import * as React from 'react';
+     * Remark: it is true when "esModuleInterop" is true.
+     */
+    "allowSyntheticDefaultImports": true,
+
+    /*
+     * https://www.typescriptlang.org/tsconfig#forceConsistentCasingInFileNames
+     *
+     * TypeScript's case sensitivity depends on the environment it's running on,
+     * i.e. if the developer machine is case-insensitive, TypeScript is also case-insensitive.
+     *
+     * For example: for case-insensitive environment, import "PACKAGE.json" will not throw any error;
+     *
+     * This flag enforces the file name casing is consistent across import and file system.
+     */
+    "forceConsistentCasingInFileNames": true,
+
+    /*
+     * https://www.typescriptlang.org/tsconfig#isolatedModules
+     *
+     * If you use other transpilers to transpile TS to JS, some of them, such as Babel, only read *one file at a time*.
+     * If your code depends on TS features that will be stripped in build time, your transpiled JS code will cause run-time error.
+     * It is not an issue for type-checking, because type-checking requires parsing every files.
+     *
+     * For example:
+     * During build process, constant enum is removed. If the references and the constant enum live in the same file,
+     * then it's fine, they are replaced by the actual values; Otherwise, it becomes a problem because the constant enum disappears.
+     * https://stackoverflow.com/questions/56854964/why-is-const-enum-allowed-with-isolatedmodules
+     *
+     * Enable "isolatedModules" will help you avoid these issues.
+     */
+    "isolatedModules": true,
+
+    /*
+     * https://www.typescriptlang.org/tsconfig#verbatimModuleSyntax
+     *
+     * It forces you to add "type" modifier on type import and export.
+     * Anything with "type" modifier is dropped after compilation.
+     *
+     * For example:
+     * import { type Car } from './Car'; becomes import {} from './Car'; when enabled,
+     * and is completely dropped otherwise.
+     *
+     * The difference is subtle. If "verbatimModuleSyntax" disabled, it might cause unexpected
+     * behavior if "Car.ts" has side effect, i.e. import "./Car";
+     *
+     * Remark:
+     *   When enabled, TypeScript is not able to output CommonJS modules.
+     */
+    "verbatimModuleSyntax": true,
+    // =============================
+
+    // ==== Type Checking ====
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    // =======================
+
+    // ==== Language / Environment ====
+    /*
+     * https://www.typescriptlang.org/tsconfig#jsx
+     *
+     * Control how to compile JSX syntax in .tsx files:
+     * react: emits .js and converts JSX to equivalent React.createElement calls
+     * react-jsx: emits .js and use _jsx call instead of createElement (performance concern)
+     * preserve: emits .jsx and do nothing
+     *
+     * Note that for "react-jsx", "react/jsx-runtime" is automatically imported,
+     * so importing react library is not required.
+     */
+    "jsx": "react-jsx",
+
+    /*
+     * https://www.typescriptlang.org/tsconfig#lib
+     * https://www.typescriptlang.org/docs/handbook/2/type-declarations.html#built-in-type-definitions
+     *
+     * TypeScript includes type definitions for built-in JS APIs available in the version specified in "target".
+     * The default value for "lib" depends on "target", but you can override it to obtain fine-grained control.
+     */
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+
+    /*
+     * https://www.typescriptlang.org/tsconfig#target
+     *
+     * It specifies the ECMAScript version of the output files.
+     * Remark: ESNext refers to the highest version that your TypeScript supports.
+     */
+    "target": "ESNext",
+
+    /*
+     * The types defined in "types" are included in global scope. E.g. process for Node.js, expect for Jest
+     */
+    "types": ["node"],
+    // ================================
+  },
+  "include": ["lib/**/*.ts", "lib/**/*.tsx"],
+  "exclude": ["lib/**/*.stories.*"]
+}
